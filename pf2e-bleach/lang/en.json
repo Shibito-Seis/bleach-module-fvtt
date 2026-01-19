@@ -1,0 +1,5 @@
+{
+  "PF2E_BLEACH.ModuleName": "PF2E Bleach",
+  "PF2E_BLEACH.Setting.EnableReiatsuUI.Name": "Enable Reiatsu UI helpers",
+  "PF2E_BLEACH.Setting.EnableReiatsuUI.Hint": "Enables small UI helpers used by the module (safe to disable)."
+}

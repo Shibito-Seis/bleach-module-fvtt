@@ -1,0 +1,5 @@
+{
+  "PF2E_BLEACH.ModuleName": "PF2E Bleach",
+  "PF2E_BLEACH.Setting.EnableReiatsuUI.Name": "Activer les aides d’interface Reiatsu",
+  "PF2E_BLEACH.Setting.EnableReiatsuUI.Hint": "Active de petites aides d’interface utilisées par le module (désactivation sans risque)."
+}

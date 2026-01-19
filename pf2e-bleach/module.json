@@ -1,0 +1,39 @@
+{
+  "id": "pf2e-bleach",
+  "title": "PF2E Bleach - Total Conversion Module",
+  "description": "A Bleach-inspired rules and content module built on the Pathfinder 2e system (PF2E). Provides pseudo-classes (Shinigami, Quincy, Hollow/Arrancar, Fullbringer), Zanpakuto templates, feats, effects, and automation via PF2E Rule Elements.",
+  "version": "0.1.2",
+  "authors": [
+    { "name": "Shibi" }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "system": ["pf2e"],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system"
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/bleach-pf2e.js"
+  ],
+  "styles": [
+    "styles/bleach-pf2e.css"
+  ],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "fr", "name": "Français", "path": "lang/fr.json" }
+  ],
+  "packs": [],
+  "packFolders": [],
+
+  "url": "https://github.com/<GITHUB_USER>/<REPO>",
+  "manifest": "https://raw.githubusercontent.com/<GITHUB_USER>/<REPO>/main/module.json",
+  "download": "https://github.com/<GITHUB_USER>/<REPO>/releases/download/v0.1.2/pf2e-bleach-module-0.1.2.zip",
+  "license": "LICENSE"
+}
