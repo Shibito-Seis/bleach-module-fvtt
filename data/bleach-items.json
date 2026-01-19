@@ -185,4 +185,131 @@
       }
     }
   }
+  ,
+  {
+    "_id": "B0lq2Xrj2pL9gF1P",
+    "name": "Axe de combat — Physique",
+    "type": "feat",
+    "img": "systems/pf2e/icons/default-icons/feat.svg",
+    "system": {
+      "actionType": { "value": "passive" },
+      "actions": { "value": null },
+      "category": "classfeature",
+      "description": {
+        "value": "<p><strong>Choix de package (v0.1).</strong> Vous privilégiez le combat physique (Zanjutsu/Hakuda) et une utilisation plus parcimonieuse du reiatsu.</p><p><strong>Reiatsu (Focus) maximum :</strong> 4.</p>"
+      },
+      "level": { "value": 1 },
+      "prerequisites": { "value": [{ "value": "Shinigami" }] },
+      "publication": {
+        "title": "Bleach Module by Shibi",
+        "authors": "Shibi",
+        "license": "OGL",
+        "remaster": false
+      },
+      "rules": [
+        {
+          "key": "ActiveEffectLike",
+          "mode": "upgrade",
+          "path": "system.resources.focus.max",
+          "value": 4
+        }
+      ],
+      "source": { "value": "Bleach Module by Shibi" },
+      "traits": {
+        "value": ["bleach", "shinigami", "axe-physique"],
+        "rarity": "common"
+      }
+    },
+    "effects": [],
+    "flags": {
+      "pf2e-bleach": {
+        "tags": ["bleach", "shinigami", "axe-physique"],
+        "axis": "physique"
+      }
+    }
+  },
+  {
+    "_id": "E2pY7mPq1vS8nH3K",
+    "name": "Axe de combat — Spirituel",
+    "type": "feat",
+    "img": "systems/pf2e/icons/default-icons/feat.svg",
+    "system": {
+      "actionType": { "value": "passive" },
+      "actions": { "value": null },
+      "category": "classfeature",
+      "description": {
+        "value": "<p><strong>Choix de package (v0.1).</strong> Vous privilégiez le Kidō et le contrôle spirituel. Votre réserve de reiatsu est plus profonde.</p><p><strong>Reiatsu (Focus) maximum :</strong> 6.</p><p><em>Kidō :</em> Hadō = Arcanes, Bakudō = Occultisme, Kaidō = Religion (optionnel).</p>"
+      },
+      "level": { "value": 1 },
+      "prerequisites": { "value": [{ "value": "Shinigami" }] },
+      "publication": {
+        "title": "Bleach Module by Shibi",
+        "authors": "Shibi",
+        "license": "OGL",
+        "remaster": false
+      },
+      "rules": [
+        {
+          "key": "ActiveEffectLike",
+          "mode": "upgrade",
+          "path": "system.resources.focus.max",
+          "value": 6
+        }
+      ],
+      "source": { "value": "Bleach Module by Shibi" },
+      "traits": {
+        "value": ["bleach", "shinigami", "axe-spirituel"],
+        "rarity": "common"
+      }
+    },
+    "effects": [],
+    "flags": {
+      "pf2e-bleach": {
+        "tags": ["bleach", "shinigami", "axe-spirituel"],
+        "axis": "spirituel"
+      }
+    }
+  },
+  {
+    "_id": "Q9wK4nZt6cA1rD8M",
+    "name": "Axe de combat — Équilibré",
+    "type": "feat",
+    "img": "systems/pf2e/icons/default-icons/feat.svg",
+    "system": {
+      "actionType": { "value": "passive" },
+      "actions": { "value": null },
+      "category": "classfeature",
+      "description": {
+        "value": "<p><strong>Choix de package (v0.1).</strong> Vous cherchez l'équilibre entre lame et Kidō. Vous progressez partout, mais n'excellez pas dans les sommets des deux voies.</p><p><strong>Reiatsu (Focus) maximum :</strong> 5.</p>"
+      },
+      "level": { "value": 1 },
+      "prerequisites": { "value": [{ "value": "Shinigami" }] },
+      "publication": {
+        "title": "Bleach Module by Shibi",
+        "authors": "Shibi",
+        "license": "OGL",
+        "remaster": false
+      },
+      "rules": [
+        {
+          "key": "ActiveEffectLike",
+          "mode": "upgrade",
+          "path": "system.resources.focus.max",
+          "value": 5
+        }
+      ],
+      "source": { "value": "Bleach Module by Shibi" },
+      "traits": {
+        "value": ["bleach", "shinigami", "axe-equilibre"],
+        "rarity": "common"
+      }
+    },
+    "effects": [],
+    "flags": {
+      "pf2e-bleach": {
+        "tags": ["bleach", "shinigami", "axe-equilibre"],
+        "axis": "equilibre"
+      }
+    }
+  }
 ]

@@ -41,6 +41,13 @@ Hooks.once("ready", async () => {
       system: "pf2e",
       src: "modules/pf2e-bleach/data/bleach-items.json",
     },
+    {
+      packName: "bleach-macros",
+      label: "Bleach: Macros",
+      type: "Macro",
+      system: "pf2e",
+      src: "modules/pf2e-bleach/data/bleach-macros.json",
+    },
   ];
 
   for (const seed of seeds) {
@@ -52,18 +59,26 @@ Hooks.once("ready", async () => {
       system: seed.system,
     }));
 
-    // Skip if already seeded.
-    await pack.getIndex();
-    if (pack.index?.size) continue;
-
     try {
       const resp = await fetch(seed.src);
       if (!resp.ok) throw new Error(`HTTP ${resp.status} while fetching ${seed.src}`);
       const docs = await resp.json();
 
-      // Create documents inside the compendium.
-      await pack.documentClass.createDocuments(docs, { pack: pack.collection });
-      console.log(`[pf2e-bleach] Seeded compendium world.${seed.packName} with ${docs.length} documents.`);
+      // Idempotent import: create only missing documents (match by type+name).
+      await pack.getIndex();
+      const existingKeys = new Set(
+        (pack.index ?? []).map((e) => `${e.type ?? seed.type}::${(e.name ?? "").trim()}`)
+      );
+
+      const toCreate = docs.filter((d) => {
+        const key = `${(d.type ?? seed.type)}::${(d.name ?? "").trim()}`;
+        return !existingKeys.has(key);
+      });
+
+      if (!toCreate.length) continue;
+
+      await pack.documentClass.createDocuments(toCreate, { pack: pack.collection });
+      console.log(`[pf2e-bleach] Imported ${toCreate.length} new document(s) into world.${seed.packName}.`);
     } catch (err) {
       console.error(`[pf2e-bleach] Failed seeding ${seed.packName}:`, err);
       ui.notifications?.error(`PF2E Bleach: échec de création du compendium ${seed.label}. Voir la console.`);
