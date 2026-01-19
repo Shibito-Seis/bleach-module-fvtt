@@ -1,6 +1,6 @@
 # PF2E Bleach (FoundryVTT Module)
 
-A Bleach-inspired total conversion module built **on top of the PF2E system**.
+A Bleach-inspired total conversion module built **on top of the PF2E system**. Actually only **2%** finished.
 
 ## What this module will contain (planned)
 - Pseudo-classes: **Shinigami**, **Quincy**, **Hollow/Arrancar**, **Fullbringer**
