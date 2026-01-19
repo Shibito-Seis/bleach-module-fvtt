@@ -32,8 +32,8 @@
   "packs": [],
   "packFolders": [],
 
-  "url": "https://github.com/<GITHUB_USER>/<REPO>",
-  "manifest": "https://raw.githubusercontent.com/<GITHUB_USER>/<REPO>/main/module.json",
-  "download": "https://github.com/<GITHUB_USER>/<REPO>/releases/download/v0.1.3/pf2e-bleach-module-0.1.3.zip",
+  "url": "https://github.com/Shibito-Seis/bleach-module-fvtt",
+  "manifest": "https://raw.githubusercontent.com/Shibito-Seis/bleach-module-fvtt/main/module.json",
+  "download": "https://github.com/Shibito-Seis/bleach-module-fvtt/releases/download/latest/pf2e-bleach-module-0.1.3.zip",
   "license": "LICENSE"
 }
